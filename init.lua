@@ -2,6 +2,7 @@
 -- ---------------------------------------
 -- This is the entry point of your config.
 -- ---------------------------------------
+vim.deprecate = function() end
 
 local function load_source(source)
   local status_ok, error = pcall(require, source)
