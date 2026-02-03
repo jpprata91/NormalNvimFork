@@ -186,19 +186,21 @@ return {
 
       -- Buttons
       dashboard.section.buttons.val = {
+        dashboard.button("f", " Find File",
+          "<cmd>Telescope find_files<CR>"),
         dashboard.button("n",
-          get_icon("GreeterNew") .. " New",
+          " New File",
           "<cmd>ene<CR>"),
         dashboard.button("e",
-          get_icon("GreeterRecent") .. " Recent  ",
+          " Recent Files  ",
           "<cmd>Telescope oldfiles<CR>"),
         yazi_button,
         dashboard.button("s",
-          get_icon("GreeterSessions") .. " Sessions",
+         " Sessions",
           "<cmd>SessionManager! load_session<CR>"
         ),
         dashboard.button("p",
-          get_icon("GreeterProjects") .. " Projects",
+          " Projects",
           "<cmd>Telescope projects<CR>"),
         dashboard.button("", ""),
         dashboard.button("q", "   Quit", "<cmd>exit<CR>"),
